@@ -142,7 +142,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
         ImageView googleMapTool = findViewById(R.id.google_maps_tool);
 
         imgSearch = findViewById(R.id.imgSearch);
-        imgSearch.setVisibility(View.GONE);
+     //   imgSearch.setVisibility(View.GONE);
         addressline2 = findViewById(R.id.addressline2);
         citydetail = findViewById(R.id.citydetails);
 
@@ -223,7 +223,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
         imgSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!Places.isInitialized()) {
+             /*   if (!Places.isInitialized()) {
                     Places.initialize(LocationPickerActivity.this.getApplicationContext(),MapUtility.apiKey);
                 }
 
@@ -235,7 +235,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
                 Intent intent = new Autocomplete.IntentBuilder(
                         AutocompleteActivityMode.FULLSCREEN, fields)
                         .build(LocationPickerActivity.this);
-                LocationPickerActivity.this.startActivityForResult(intent, PLACE_AUTOCOMPLETE_REQUEST_CODE);
+                LocationPickerActivity.this.startActivityForResult(intent, PLACE_AUTOCOMPLETE_REQUEST_CODE);*/
             }
         });
 
