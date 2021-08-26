@@ -143,6 +143,8 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
 
         imgSearch = findViewById(R.id.imgSearch);
      //   imgSearch.setVisibility(View.GONE);
+        
+        addressline1 = findViewById(R.id.addressline1);
         addressline2 = findViewById(R.id.addressline2);
         citydetail = findViewById(R.id.citydetails);
 
