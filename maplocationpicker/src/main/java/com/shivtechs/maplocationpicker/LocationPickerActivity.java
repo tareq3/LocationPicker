@@ -38,7 +38,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -142,6 +142,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
         ImageView googleMapTool = findViewById(R.id.google_maps_tool);
 
         imgSearch = findViewById(R.id.imgSearch);
+        imgSearch.setVisibility(View.GONE);
         addressline2 = findViewById(R.id.addressline2);
         citydetail = findViewById(R.id.citydetails);
 
