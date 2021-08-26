@@ -18,17 +18,17 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/white_rounded_corner"
-        android:drawableEnd="@drawable/ic_search_black_24dp"
+       
         android:drawableStart="@drawable/ic_pointer"
         android:drawablePadding="5dp"
         android:gravity="start|center_vertical"
-        android:hint="Search Location"
+        android:hint="..."
         android:maxLines="1"
         android:padding="5dp"
         android:textColorHint="@color/colorPrimary"
         android:textCursorDrawable="@null"
         android:textSize="18sp"
-        android:drawableRight="@drawable/ic_search_black_24dp"
+     
         android:drawableLeft="@drawable/ic_place_red_800_24dp" />
 
 
