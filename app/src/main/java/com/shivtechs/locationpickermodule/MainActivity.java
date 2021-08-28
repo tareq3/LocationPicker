@@ -48,6 +48,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     double currentLatitude = data.getDoubleExtra(MapUtility.LATITUDE, 0.0);
                     double currentLongitude = data.getDoubleExtra(MapUtility.LONGITUDE, 0.0);
                     Bundle completeAddress =data.getBundleExtra("fullAddress");
+
                     /* data in completeAddress bundle
                     "fulladdress"
                     "city"
@@ -58,7 +59,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     "addressline2"
                      */
 
-                    txtAddress.setText(new StringBuilder().append("addressline2: ").append
+                    txtAddress.setText(new StringBuilder().append(completeAddress.getString("addressline1")).append
                             (completeAddress.getString("addressline2")).append("\ncity: ").append
                             (completeAddress.getString("city")).append("\npostalcode: ").append
                             (completeAddress.getString("postalcode")).append("\nstate: ").append

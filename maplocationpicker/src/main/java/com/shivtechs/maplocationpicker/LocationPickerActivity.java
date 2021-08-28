@@ -244,12 +244,14 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
         txtSelectLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                addressBundle.putString("addressline1",addressline1.getText().toString());
                 Intent intent = new Intent();
                 // add data into intent and send back to Parent Activity
                 intent.putExtra(MapUtility.ADDRESS, imgSearch.getText().toString().trim());
                 intent.putExtra(MapUtility.LATITUDE, mLatitude);
                 intent.putExtra(MapUtility.LONGITUDE, mLongitude);
                 intent.putExtra("fullAddress",addressBundle);
+
                 intent.putExtra("id", place_id);//if you want place id
                 intent.putExtra("url", place_url);//if you want place url
                 LocationPickerActivity.this.setResult(Activity.RESULT_OK, intent);
@@ -695,6 +697,13 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
             filterTaskList.add(asyncTask);
             asyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, userAddress);
         }
+    }
+
+    @Override
+    protected void onStop() {
+
+
+        super.onStop();
     }
 
     @SuppressLint("StaticFieldLeak")
